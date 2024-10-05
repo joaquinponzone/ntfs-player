@@ -149,7 +149,7 @@ export function CannabisSymbolAudioPlayer() {
         >
           {isAudioPlaying ? "PAUSE" : "PLAY"}
         </button>
-        <div className="text-green-100 text-xs text-center w-full flex justify-around py-2" style={{ fontFamily: 'Arial, sans-serif', textShadow: '0 0 5px rgba(34, 197, 94, 0.5)' }}>
+        <div className="text-green-100 text-xs text-center w-full flex justify-between max-w-xs py-2 " style={{ fontFamily: 'Arial, sans-serif', textShadow: '0 0 5px rgba(34, 197, 94, 0.5)' }}>
           <p className="mb-1">{process.env.NEXT_PUBLIC_TRACK_TITLE}</p>
           <p>{formatTime(remainingTime)}</p>
         </div>
